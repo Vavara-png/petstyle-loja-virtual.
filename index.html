@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet&Style</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 bg-white shadow-md">
+    <h1 class="text-2xl font-bold text-pink-600">Pet&Style</h1>
+    <nav>
+      <ul class="flex gap-4 text-sm md:text-base">
+        <li><a href="#hero" class="hover:text-pink-600">Início</a></li>
+        <li><a href="#produtos" class="hover:text-pink-600">Produtos</a></li>
+        <li><a href="#perfis" class="hover:text-pink-600">Perfis</a></li>
+        <li><a href="#contato" class="hover:text-pink-600">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="flex flex-col md:flex-row items-center justify-center text-center md:text-left p-8 bg-pink-100">
+    <div class="md:w-1/2">
+      <h2 class="text-4xl font-bold mb-4">Estilo e conforto para seu pet 🐾</h2>
+      <p class="mb-6">Na Pet&Style você encontra produtos exclusivos que unem moda e bem-estar para seu melhor amigo.</p>
+      <a href="#produtos" class="bg-pink-600 text-white px-6 py-2 rounded hover:bg-pink-700">Ver Produtos</a>
+    </div>
+    <div class="md:w-1/2 mt-6 md:mt-0">
+      <img src="./banner.jpg" alt="Pet estiloso" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="p-8">
+    <h3 class="text-3xl font-bold text-center mb-8">Nossos Produtos</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center hover:scale-105 transition">
+        <img src="./caminha.jpg" alt="Caminha" class="rounded mb-4">
+        <h4 class="font-semibold">Caminha Estilosa</h4>
+        <p class="text-sm text-gray-600">Conforto e design moderno.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center hover:scale-105 transition">
+        <img src="./coleira.jpg" alt="Brinquedo" class="rounded mb-4">
+        <h4 class="font-semibold">Brinquedo Divertido</h4>
+        <p class="text-sm text-gray-600">Diversão garantida para seu pet.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center hover:scale-105 transition">
+        <img src="./brinquedo.jpg" alt="Coleira" class="rounded mb-4">
+        <h4 class="font-semibold">Coleira Fashion</h4>
+        <p class="text-sm text-gray-600">Estilo e segurança em um só produto.</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center hover:scale-105 transition">
+        <img src="./acessorios.jpg" alt="Acessório" class="rounded mb-4">
+        <h4 class="font-semibold">Acessório Chic</h4>
+        <p class="text-sm text-gray-600">Detalhes que fazem a diferença.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perfis -->
+  <section id="perfis" class="bg-gray-100 p-8">
+    <h3 class="text-3xl font-bold text-center mb-8">Nossos Clientes</h3>
+    <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+      <!-- Perfil 1 -->
+      <div class="flex flex-col items-center">
+        <img src="./perfil2.jpg" alt="Ana" class="w-24 h-24 rounded-full shadow-md mb-4">
+        <h4 class="font-semibold">Ana</h4>
+        <p class="text-sm text-gray-600 text-center">"Minha cachorrinha amou a caminha!"</p>
+      </div>
+      <!-- Perfil 2 -->
+      <div class="flex flex-col items-center">
+        <img src="./perfil1.jpg" alt="Carlos" class="w-24 h-24 rounded-full shadow-md mb-4">
+        <h4 class="font-semibold">Carlos</h4>
+        <p class="text-sm text-gray-600 text-center">"Os brinquedos são incríveis!"</p>
+      </div>
+      <!-- Perfil 3 -->
+      <div class="flex flex-col items-center">
+        <img src="./perfil3.jpg" alt="Júlia" class="w-24 h-24 rounded-full shadow-md mb-4">
+        <h4 class="font-semibold">Júlia</h4>
+        <p class="text-sm text-gray-600 text-center">"Adorei a coleira fashion."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="p-8">
+    <h3 class="text-3xl font-bold text-center mb-8">Entre em Contato</h3>
+    <div class="flex flex-col md:flex-row gap-8 justify-center">
+      <div class="md:w-1/3">
+        <p><strong>Email:</strong> contato@petstyle.com</p>
+        <p><strong>Telefone:</strong> (47) 99999-9999</p>
+      </div>
+      <form class="md:w-1/3 bg-white shadow-md rounded-lg p-6 flex flex-col gap-4">
+        <input type="text" placeholder="Seu nome" class="border rounded p-2">
+        <input type="email" placeholder="Seu e-mail" class="border rounded p-2">
+        <textarea placeholder="Sua mensagem" class="border rounded p-2"></textarea>
+        <button type="submit" class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-600 text-white text-center p-4 mt-8">
+    <p>&copy; 2025 Pet&Style - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
